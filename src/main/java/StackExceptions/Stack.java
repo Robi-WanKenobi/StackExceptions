@@ -5,7 +5,7 @@ package StackExceptions;
  */
 public interface Stack<E> {
 
-    void push(E e);
-    E pop();
+    void push(E e) throws FullException;
+    E pop() throws EmptyException;
     int size();
 }
